@@ -114,7 +114,7 @@ protected:
 
     void changeEvent(QEvent *event) override; 
 
-    bool nativeEvent(const QByteArray &eventType, void *message, long *result) override;
+    bool nativeEvent(const QByteArray &eventType, void *message, qintptr *result) override;
  
 signals:
     void sig_ParentNativeEvent(int msg);

@@ -1106,7 +1106,7 @@ QWidget* MainFrame::GetBodyView()
     return _mainWindow->GetBodyView();
 }
 
-bool MainFrame::nativeEvent(const QByteArray &eventType, void *message, long *result)
+bool MainFrame::nativeEvent(const QByteArray &eventType, void *message, qintptr *result)
 {
 #ifdef _WIN32
 
